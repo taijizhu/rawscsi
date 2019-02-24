@@ -28,12 +28,12 @@ Gem::Specification.new do |spec|
   unless RUBY_VERSION == "1.8.7"
     spec.add_development_dependency "activerecord", "> 2.0"
     spec.add_dependency "httparty", "~> 0.11"
-    spec.add_dependency "faraday", "~> 0.9.1"
+    spec.add_dependency "faraday", "~> 0.15.4"
     spec.add_dependency "faraday_middleware"
   else
     spec.add_development_dependency "activerecord", "2.0"
     spec.add_dependency "httparty", "0.8"
-    spec.add_dependency "faraday", "=0.8.7"
+    spec.add_dependency "faraday", "~> 0.15.4"
     spec.add_dependency "faraday_middleware", ">= 0.8.0"
     spec.add_dependency "json"
   end
